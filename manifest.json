@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Double Toasted",
+  "description": "This get the latest show of doubletoasted.com",
+  "version": "1.0",
+  "options_page": "options/options.html",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "permissions": [
+    "storage",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+
+      p{
+          text-transform: uppercase;
+          text-decoration: none;
+          font-weight: 200;
+          letter-spacing: .5px;
+          line-height: 15px;
+          color: white;
+          font-size: 10px;
+      }
+
+      html{
+        height: 500px;
+      }     
+      body {
+        background-color: #0c1e41;
+        width: 500px;
+        overflow-x: hidden;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px
+      }
+      .header{
+        z-index: 10;
+        background-image: url(images/header-nav-texture@2.jpg);
+        background-repeat: repeat;
+        height: 40px;
+        width: 100%;
+      }
+
+      .logo{
+        float: left;
+      }
+
+      .logo img{
+        width: 100px;
+      }
+
+      .options{
+        float: right;
+        margin-top: 0px;
+        margin-right: 20px;
+        color: white;
+        cursor: pointer;
+      }
+      .options p{
+        font-size: 15px;     
+      }
+
+       .container{
+          
+       }
+      .container p{
+        margin-top: 10px;
+        float: left;
+        margin: 8px;
+      }
+      .container img{
+        height: 50px;
+        float: right;
+        margin-right: 10px;
+      }
+
+      .show_info{
+          margin-top: 15px;
+          height: 50px;
+          background: linear-gradient(#082042,#008497);
+       }
+       
+       .show_info p {
+        font-size: 15px;
+       }
+
+       .show{
+        height: 130px;
+        border-top: 2px double;
+        border-top-color: aquamarine;
+        margin: 8px;
+        overflow: hidden;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 200;
+        letter-spacing: .5px;
+        line-height: 15px;
+        color: white;
+        font-size: 15px;
+       }
+       .title{
+        margin-top: 10px;
+        margin-bottom: 15px;
+       }
+
+       button{
+        padding: 0 10px;
+        position: relative;
+        background-color: #f77a00;
+        opacity: 1;
+        border-radius: 10px;
+        color: white;
+        display: inline-block;
+        zoom: 1;
+        margin: 5px;
+        font-size: 12px;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-family: 'Open Sans',Helvetica,sans-serif;
+        font-weight: 100;
+        line-height: 28px;
+        border: none;
+        float: left;
+       }
+
+       .wrapper{
+        height: 100%;
+        display: none;
+       }
+
+       .date{
+        font-size: 10px;
+        position: relative;
+        margin-top: 25px;
+        float: right;
+        margin-right: 10px;
+       }
+
+       .overlay{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0,0,0,0.8);
+          font-family: sans-serif;
+          color: #fff;
+          padding: 2em;
+          z-index: 5;
+      }  
+      
+      .loading {
+        z-index: 10;
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        background: url('images/loading.gif') no-repeat center center;
+      }       
+      
+      .description{
+        width: 75%;
+        height: 50%;
+        position: relative;
+        float: left;
+        margin-top: -15px;
+        margin-left: 20px;
+      }
+      .description p{
+        text-transform: none;
+        font-size: 12px;
+      }
+
+      .more{
+        float: left;
+        line-height: 15px;
+        position: relative;
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+
+    </style>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="loading"></div>
+    <div class="header">
+      <div class="logo">
+        <img src="images/double-toasted-logo@2x.png" rel="DoubleToasted.com">
+
+      </div>
+      <div class="options" id="options"><p>Options</p></div>
+    </div>
+    <div class="wrapper">
+      
+    </div>
+    </div>
+  </body>
+</html>
+
