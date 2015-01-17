@@ -68,7 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
       loadFeed();
 
     document.getElementById('options').addEventListener("click",function(el){
-      chrome.tabs.create({ url: "chrome-extension://hjbpglhnpaijooomdljbjjilhljdiihe/options/options.html" });
+      var url = "chrome-extension://"+chrome.runtime.id+"/options/options.html";
+      chrome.tabs.create({ url: url });
    })
   });
 });
